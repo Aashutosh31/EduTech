@@ -1,0 +1,89 @@
+
+body {
+    background: #f5f6fa;
+    font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+}
+
+.pw-instructors {
+    max-width: 1100px;
+    margin: 3rem auto 2rem auto;
+    padding: 2rem 1rem;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 16px rgba(44,62,80,0.10);
+}
+.pw-section-title {
+    text-align: center;
+    font-size: 2.3rem;
+    font-weight: 800;
+    color: #232323;
+    margin-bottom: 2.5rem;
+    letter-spacing: 1px;
+}
+.pw-instructor-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+.pw-instructor-card {
+    background: #232323;
+    color: #ffd600;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(44,62,80,0.12);
+    padding: 2.2rem 2rem 1.5rem 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    min-height: 320px;
+    text-align: center;
+}
+.pw-instructor-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 32px rgba(44,62,80,0.18);
+}
+.pw-instructor-image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 8px rgba(44,62,80,0.10);
+    border: 3px solid #ffd600;
+    background: #fff;
+}
+.pw-instructor-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #ffd600;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+.pw-instructor-bio {
+    font-size: 1.05rem;
+    color: #fff;
+    margin-bottom: 1.2rem;
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    .pw-instructors {
+        padding: 1rem 0.3rem;
+    }
+    .pw-section-title {
+        font-size: 1.5rem;
+    }
+    .pw-instructor-list {
+        gap: 1rem;
+    }
+    .pw-instructor-card {
+        padding: 1.2rem 0.7rem 1rem 0.7rem;
+        min-height: 220px;
+    }
+    .pw-instructor-image {
+        width: 60px;
+        height: 60px;
+    }
+}
+
